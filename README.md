@@ -20,35 +20,24 @@ $ python3 run.py quick
 ============================================================
 THREAT INTELLIGENCE BRIEFING
 ============================================================
-[*] Phase 1/3: Fetching news...
-✓ New AWS S3 Bucket Policy Exploit Allows Data Theft...
-⊘ Skipped (non-security): Some non-tech article...
-✓ Critical RCE Found in Apache Struts...
-
-[] Phase 2/3: MITRE analysis (2 articles)...
-[] Phase 3/3: Done in 180s
 
 🔴 New AWS S3 Bucket Policy Exploit Allows Data Theft
-📅 Fri, 03 Jul 2026 13:33:37 +0530
 📌 MATCHES YOUR STACK: AWS
-📖 WHAT'S HAPPENING: Attackers can exploit misconfigured S3 bucket
-policies to gain unauthorized access to sensitive data stored in AWS.
-💥 IMPACT: Check your bucket policies immediately.
+📖 Attackers exploit misconfigured S3 bucket policies
+to gain unauthorized access to sensitive data.
+💥 Check your bucket policies immediately.
 🔖 MITRE: T1190, T1530
-🎯 ACTION: aws s3api get-bucket-acl --bucket your-bucket-name
-🔗 https://example.com/aws-s3-exploit
+🎯 aws s3api get-bucket-acl --bucket your-bucket-name
 
 🟡 Critical RCE Found in Apache Struts
-📅 Fri, 03 Jul 2026 14:20:00 +0530
-📖 WHAT'S HAPPENING: A remote code execution vulnerability in Apache
-Struts allows attackers to execute arbitrary code on affected servers.
-💥 IMPACT: Test Struts endpoints for OGNL injection.
+📖 Remote code execution in Apache Struts allows
+attackers to run arbitrary code on affected servers.
+💥 Test Struts endpoints for OGNL injection.
 🔖 MITRE: T1190
-🎯 ACTION: nuclei -t cves/2026/CVE-2026-XXXXX.yaml -l targets.txt
-🔗 https://example.com/apache-struts-rce
+🎯 nuclei -t cves/2026/CVE-2026-XXXXX.yaml -l targets.txt
 
 ============================================================
-Saved: 2 new | Already seen: 0 | Total in DB: 2
+Saved: 2 new | Total in DB: 2
 ============================================================
 
 text
