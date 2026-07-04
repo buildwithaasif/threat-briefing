@@ -1,0 +1,19 @@
+infrastructure:
+  cloud:
+    - AWS
+  containers:
+    - Docker
+  os:
+    - Linux
+    - macOS
+  tools:
+    - Burp Suite
+    - Metasploit
+    - nuclei
+    - Wireshark
+  
+ignore:
+  - Windows Server
+  - Azure
+  - SAP
+  - Oracle

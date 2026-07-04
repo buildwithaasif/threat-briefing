@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+data/briefings.db
+data/news_cache/
+data/vector_store/
+.env
