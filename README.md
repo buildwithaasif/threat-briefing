@@ -17,9 +17,9 @@ AI-powered threat intelligence briefing for security professionals. Fetches secu
 ## Sample Output
 $ python3 run.py quick
 
-============================================================
+
 THREAT INTELLIGENCE BRIEFING
-============================================================
+
 
 🔴 New AWS S3 Bucket Policy Exploit Allows Data Theft
 📌 MATCHES YOUR STACK: AWS
@@ -36,9 +36,9 @@ attackers to run arbitrary code on affected servers.
 🔖 MITRE: T1190
 🎯 nuclei -t cves/2026/CVE-2026-XXXXX.yaml -l targets.txt
 
-============================================================
+
 Saved: 2 new | Total in DB: 2
-============================================================
+
 
 text
 
